@@ -1,0 +1,161 @@
+.pin-spacer {
+  .pro-cont-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .main-inner {
+    @include tabletMore {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 80px;
+    }
+    .pro-cont {
+      @include tabletMore {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        // height: 800px;
+      }
+      .tit-box {
+        @include tabletMore {
+          width: 360px;
+          margin-top: 340px;
+        }
+        .card-tit1 {
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 24px;
+          letter-spacing: 0.9px;
+          @include tabletMore {
+            font-size: 24px;
+            line-height: 32px;
+            letter-spacing: -1.2px;
+          }
+        }
+        .card-tit2 {
+          margin-top: 8px;
+          color: #fff;
+          font-size: 32px;
+          font-weight: 700;
+          line-height: 40px;
+          letter-spacing: -1.6px;
+          @include tabletMore {
+            font-size: 40px;
+            line-height: 48px;
+          }
+        }
+        .card-intro {
+          margin-top: 16px;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 24px;
+          @include tabletMore {
+            font-size: 18px;
+          }
+        }
+      }
+      .list-box {
+        @include tabletMore {
+          padding: 200px 0;
+          flex-direction: row;
+          flex-wrap: wrap;
+          gap: 120px 40px;
+          width: 530px;
+          margin-top: 0;
+        }
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        margin-top: 40px;
+        @include mobileMore {
+          flex-direction: row;
+          column-gap: 0;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          li {
+            // width: calc(50% - 20px);
+            @include tabletMore {
+              height: 480px;
+            }
+          }
+        }
+        .list_category_card {
+          @include tabletMore {
+            display: flex;
+            flex-direction: column;
+            width: 232px;
+            height: 480px;
+          }
+        }
+      }
+      .list_category_card {
+        .card-img {
+          border-top-left-radius: 24px;
+          border-top-right-radius: 24px;
+          vertical-align: top;
+          width: 100%;
+        }
+        .inner {
+          padding: 24px;
+          background-color: #fff;
+          border-bottom-left-radius: 24px;
+          border-bottom-right-radius: 24px;
+          // box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.08);
+          .time {
+            display: block;
+            font-size: 20px;
+            font-weight: 700;
+            color: #202225;
+            line-height: 24px;
+          }
+          .expl {
+            margin-top: 16px;
+            color: #6f7277;
+            line-height: 22px;
+            display: block;
+            letter-spacing: -0.9px;
+            font-size: 15px;
+          }
+        }
+        .more {
+          margin-top: 16px;
+          padding-top: 16px;
+          border-top: 1px solid #d9d9d9;
+          span {
+            position: relative;
+            display: block;
+            font-size: 16px;
+            font-weight: 700;
+            color: #202225;
+            line-height: 24px;
+          }
+          span::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 0;
+            width: 24px;
+            height: 24px;
+            background: url("../../../resources/images/ico_more.svg") no-repeat center / 24px;
+            transform: translateY(-60%);
+          }
+        }
+      }
+    }
+  }
+}
+
+.pro-cont .list-box li:nth-child(2n) .list_category_card {
+  @include tabletMore {
+    margin-top: 300px;
+  }
+}
+
+.pro-cont .list-box .list_category_card .virtual {
+  @include tabletMore {
+    margin-top: 300px;
+  }
+}

@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>즐거움엔 tvN</title>
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="페이지 제목" />
+    <meta property="og:description" content="페이지 설명" />
+    <meta property="og:image" content="http://www.mysite.com/article/article1_featured_image.jpg" />
+    <meta property="og:url" content="http://www.mysite.com/article/article1.html" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="페이지 제목" />
+    <meta name="twitter:description" content="페이지 설명" />
+    <meta name="twitter:image" content="http://www.mysite.com/article/article1.html" />
+    <meta name="twitter:domain" content="사이트 명" />
+    <link rel="icon" sizes="152x152" href="https://poc-cf-image.cjenm.com/crop/152x152/public/share/systemmng/site/sitemng/pavicon_tvN.png" />
+    <link rel="shortcut icon" href="http://www.mysite.com/favicon.ico" />
+    <!-- css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link rel="stylesheet" href="../resources/css/styles.css" />
+    <link rel="stylesheet" href="../resources/css/pattern_css.css" />
+    <!-- js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="../resources/js/pattern/ui-swiper.js"></script>
+    <script defer src="../resources/js/pattern/ui-pattern-script.js"></script>
+    <script defer src="../resources/js/include.js"></script>
+  </head>
+  <body>
+    <div id="skip-nav">
+      <a href="#gnb">메뉴 바로가기</a>
+      <a href="#container">본문 바로가기</a>
+    </div>
+    <div id="wrap">
+      <!-- active 추가시 depth2 활성화 -->
+      <header id="header" class="">
+        <div class="inner">
+          <h1 id="logo">
+            <a href="#">
+              <span>우리자산운용</span>
+            </a>
+          </h1>
+          <nav id="gnb" class="gnb">
+            <ul class="gnb__depth1">
+              <li>
+                <a href="#">
+                  <span>menu1</span>
+                </a>
+                <ul class="gnb__depth2">
+                  <li><a href="#">menu1-1</a></li>
+                  <li><a href="#">menu1-2</a></li>
+                  <li><a href="#">menu1-3</a></li>
+                  <li><a href="#">menu1-4</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#"><span>menu2</span></a>
+                <ul class="gnb__depth2">
+                  <li><a href="#">menu2-1</a></li>
+                  <li><a href="#">menu2-2</a></li>
+                  <li><a href="#">menu2-3</a></li>
+                  <li><a href="#">menu2-4</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#"><span>menu3</span></a>
+                <ul class="gnb__depth2">
+                  <li><a href="#">menu3-1</a></li>
+                  <li><a href="#">menu3-2</a></li>
+                  <li><a href="#">menu3-3</a></li>
+                  <li><a href="#">menu3-4</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#"><span>menu4</span></a>
+                <ul class="gnb__depth2">
+                  <li><a href="#">menu4-1</a></li>
+                  <li><a href="#">menu4-2</a></li>
+                  <li><a href="#">menu4-3</a></li>
+                  <li><a href="#">menu4-4</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <div class="util">
+            <!-- active 추가시 활성화 -->
+            <div class="lang">
+              <button class="lang__btn">kor</button>
+              <ul class="lang__lst">
+                <li>kor</li>
+                <li>eng</li>
+              </ul>
+            </div>
+            <button class="search">
+              <span class="blind">검색</span>
+            </button>
+            <button class="all-menu">
+              <span class="blind">전체메뉴</span>
+            </button>
+          </div>
+        </div>
+        <!-- active 추가시 활성화 -->
+        <nav id="nav-all" class="">
+          <ul class="gnb__depth1">
+            <li>
+              <a href="#">
+                <span>menu1</span>
+              </a>
+              <ul class="gnb__depth2">
+                <li><a href="#">menu1-1</a></li>
+                <li><a href="#">menu1-2</a></li>
+                <li><a href="#">menu1-3</a></li>
+                <li><a href="#">menu1-4</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#"><span>menu2</span></a>
+              <ul class="gnb__depth2">
+                <li><a href="#">menu2-1</a></li>
+                <li><a href="#">menu2-2</a></li>
+                <li><a href="#">menu2-3</a></li>
+                <li><a href="#">menu2-4</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#"><span>menu3</span></a>
+              <ul class="gnb__depth2">
+                <li><a href="#">menu3-1</a></li>
+                <li><a href="#">menu3-2</a></li>
+                <li><a href="#">menu3-3</a></li>
+                <li><a href="#">menu3-4</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#"><span>menu4</span></a>
+              <ul class="gnb__depth2">
+                <li><a href="#">menu4-1</a></li>
+                <li><a href="#">menu4-2</a></li>
+                <li><a href="#">menu4-3</a></li>
+                <li><a href="#">menu4-4</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <button class="close">
+            <span class="">전체메뉴 닫기</span>
+          </button>
+        </nav>
+      </header>
+      <div class="slide">
+        <!-- Slider main container -->
+        <div class="swiper slide-intro">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <a href="#">
+                <picture>
+                  <source srcset="../resources/images/정년이_slide_desktop.png" media="(min-width: 1024px)" />
+                  <source srcset="../resources/images/정년이_slide_desktop.png" media="(min-width: 600px)" />
+                  <source srcset="../resources/images/정년이_slide_desktop.png" />
+                  <img src="../resources/images/정년이_slide_desktop.png" alt="Flowers" />
+                </picture>
+                <div class="text-area">
+                  <div class="inner">
+                    <strong class="text-area__tit">NO.1 <span class="primary-color">K콘텐츠</span> 채널<br />즐거움엔 <i class="m-logo"></i></strong>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <picture>
+                  <source srcset="../resources/images/uqiz.png" media="(min-width: 1024px)" />
+                  <source srcset="../resources/images/uqiz.png" media="(min-width: 600px)" />
+                  <source srcset="../resources/images/uqiz.png" />
+                  <img src="../resources/images/uqiz.png" alt="Flowers" />
+                </picture>
+                <div class="text-area">
+                  <div class="inner">
+                    <strong class="text-area__tit">NO.1 <span class="primary-color">K콘텐츠</span> 채널<br />즐거움엔 <i class="m-logo"></i></strong>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <picture>
+                  <source srcset="../resources/images/놀토_모바일more_main.png" media="(min-width: 1024px)" />
+                  <source srcset="../resources/images/놀토_모바일more_main.png" media="(min-width: 600px)" />
+                  <source srcset="../resources/images/놀토_모바일more_main.png" />
+                  <img src="../resources/images/놀토_모바일more_main.png" alt="Flowers" />
+                </picture>
+                <div class="text-area">
+                  <div class="inner">
+                    <strong class="text-area__tit">NO.1 <span class="primary-color">K콘텐츠</span> 채널<br />즐거움엔 <i class="m-logo"></i></strong>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <main id="container">
+        <div class="main-inner pro-table">
+          <div class="tit-box">
+            <em class="tit-depth1">편성표</em>
+            <h2 class="tit-depth2">오늘 <span class="primary-color">TV</span> 뭐 보지?</h2>
+          </div>
+          <ol>
+            <li class="aos-init aos-animate">
+              <div>
+                <img class="table-img" src="../resources/images/program-table-정년이.png" alt="" />
+              </div>
+              <a href="#" class="pro-name-time">
+                <div class="pro-name pro-name1">
+                  <strong>정년이(재)</strong>
+                </div>
+                <div class="live-now">
+                  <strong class="primary-color">Live now</strong>
+                </div>
+                <div class="pro-time">
+                  <span> 12:10 - 14:40</span>
+                </div>
+              </a>
+            </li>
+            <li class="aos-init aos-animate">
+              <div>
+                <img class="table-img" src="../resources/images/program-table-유퀴즈.png" alt="" />
+              </div>
+              <a href="#" class="pro-name-time">
+                <div class="pro-name pro-name2">
+                  <strong>유퀴즈 온 더 블럭(재)</strong>
+                </div>
+                <div class="pro-time">
+                  <span>14:40 - 16:00</span>
+                </div>
+              </a>
+            </li>
+            <li class="aos-init aos-animate">
+              <div>
+                <img class="table-img" src="../resources/images/program-table-백패커2.png" alt="" />
+              </div>
+              <a href="#" class="pro-name-time">
+                <div class="pro-name pro-name3">
+                  <strong>백패커2(재)</strong>
+                </div>
+                <div class="pro-time">
+                  <span>16:00 - 17:40</span>
+                </div>
+              </a>
+            </li>
+            <li class="aos-init aos-animate">
+              <div>
+                <img class="table-img" src="../resources/images/program-table-무쇠소녀단.png" alt="" />
+              </div>
+              <a href="#" class="pro-name-time">
+                <div class="pro-name pro-name4">
+                  <strong>무쇠소녀단(본)</strong>
+                </div>
+                <div class="pro-time">
+                  <span>17:40 - 19:00</span>
+                </div>
+              </a>
+            </li>
+            <li class="aos-init aos-animate">
+              <div>
+                <img class="table-img" src="../resources/images/program-table-문과이과.png" alt="" />
+              </div>
+              <a href="#" class="pro-name-time">
+                <div class="pro-name pro-name5">
+                  <strong>문과vs이과 놀라운 증명(재)</strong>
+                </div>
+                <div class="pro-time">
+                  <span>19:00 - 20:40</span>
+                </div>
+              </a>
+            </li>
+          </ol>
+          <!-- <div class="pc-only-banner">
+            <img src="../resources/images/tving banner.jpg" alt="티빙 배너" />
+          </div> -->
+        </div>
+
+        <!-- 스튜디오 섹션 -->
+        <div class="pin-spacer">
+          <section class="sec-g sec-studio card-section">
+            <ul class="pro-cont-bg">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <div class="main-inner">
+              <div class="pro-cont">
+                <div class="tit-box">
+                  <h2 class="card-tit1">즐거움엔<i class="f-logo"></i></h2>
+                  <h4 class="card-tit2">방영 중 프로그램</h4>
+                  <p class="card-intro">tvN의 컨텐츠는 <strong class="primary-color">다양한 장르</strong>의 예능, 드라마, 다큐멘터리 등을 통해 시청자들에게 <strong class="primary-color">색다른 재미</strong>와 감동을 선사합니다.</p>
+                </div>
+                <ul class="list-box">
+                  <li>
+                    <a href="#" class="list_category_card virtual">
+                      <div class="img-box">
+                        <img class="card-img" src="../resources/images/유퀴즈 card-img.png" alt="유퀴즈 이미지박스" />
+                      </div>
+                      <div class="inner">
+                        <span class="time">수 저녁 8:45</span>
+                        <span class="expl"> 큰 자기 X 아기자기, 자기들 마음대로 떠나는 사람 여행! 자기님의, 자기님에 의한, 자기님을 위한 [유퀴즈 온 더 블럭] “You Quiz?” </span>
+                        <div class="more"><span>자세히 보기</span></div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="list_category_card virtual">
+                      <div class="img-box">
+                        <img class="card-img" src="../resources/images/정년이 card-img.jpg" alt="정년이 이미지박스" />
+                      </div>
+                      <div class="inner">
+                        <span class="time">토,일 밤 9:20</span>
+                        <span class="expl"> 1950년대 한국전쟁 후를 배경으로, 최고의 국극 배우에 도전하는 정년이를 둘러싼 경쟁과 연대, 그리고 찬란한 성장기 </span>
+                        <div class="more"><span>자세히 보기</span></div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="list_category_card virtual">
+                      <div class="img-box"><img class="card-img" src="../resources/images/삼시세끼 card-img.jpg" alt="삼시세끼 이미지박스" /></div>
+                      <div class="inner">
+                        <span class="time">금 저녁 8:45</span> <span class="expl">어느덧 10년째 밥 친구, 차승원 & 유해진이 함께 할 세끼하우스는 과연 어디일까? 유난히 뜨거웠던 이번 여름, 산 넘고 바다 건너 펼쳐지는 특별한 이야기 </span>
+                        <div class="more"><span>자세히 보기</span></div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="list_category_card virtual">
+                      <div class="img-box"><img class="card-img" src="../resources/images/백패커2 card-img.jpg" alt="백패커2 이미지박스" /></div>
+                      <div class="inner">
+                        <span class="time">일 저녁 7:40</span> <span class="expl">더 극한의 주방! 더 많아진 인원! 더 커진 스케일! 무엇을 생각하든 상상 그 이상으로 돌아왔다! 눈도 입도 즐거운, 극한의 주방 블록버스터 [백패커2] </span>
+                        <div class="more"><span>자세히 보기</span></div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="list_category_card virtual">
+                      <div class="img-box"><img class="card-img" src="../resources/images/놀토 card-img.jpg" alt="놀라운토요일 이미지박스" /></div>
+                      <div class="inner">
+                        <span class="time">토 저녁 7:40</span> <span class="expl">놀라운 토요일 토요일 저녁! 색다른 즐거움으로 시청자들을 놀라게 만들 '놀라운 토요일'이 떴다! 과연, 어떤 재미로 놀라움을 선사할지 '놀라운 토요일'에 놀러와~ </span>
+                        <div class="more"><span>자세히 보기</span></div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="list_category_card virtual">
+                      <div class="img-box"><img class="card-img" src="../resources/images/텐트밖 card-img.jpg" alt="텐트밖은 유럽 이미지박스" /></div>
+                      <div class="inner">
+                        <span class="time">목 저녁 8:40</span> <span class="expl">아마도 당신이 가보지 않았을 '로맨틱 이탈리아'! 누구나 다 아는 뻔한 관광지가 아닌, 숨은 보석 같은 소도시를 찾아 떠나다. 네 배우의 궁상과 낭만 사이, '찐' 유럽 캠핑기! </span>
+                        <div class="more"><span>자세히 보기</span></div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="list_category_card virtual">
+                      <div class="img-box"><img class="card-img" src="../resources/images/무쇠소녀단 card-img.jpg" alt="무쇠소녀단 이미지박스" /></div>
+                      <div class="inner">
+                        <span class="time">토 오후 5:50</span> <span class="expl">수영 1.5km, 사이클 40km, 달리기 10km! 극한의 스포츠 철인 3종에 도전하는 진서연X유이X설인아X박주현과, 완주를 책임질 든든한 단장 김동현까지! 피, 땀, 눈물 철인 3종 도전기 </span>
+                        <div class="more"><span>자세히 보기</span></div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- 클립 섹션 -->
+        <section class="sec-g sec-news bg-gray">
+          <div class="main-inner">
+            <div class="tit-box">
+              <em class="tit-depth1">즐거움엔 <img src="../resources/images/tvn_logo_h1.png" alt="tvn이미지" width="60px" /></em>
+              <h2 class="tit-depth2">새로움이 <strong>가득한</strong> 최신 컨텐츠</h2>
+            </div>
+            <div class="sec-g__cont">
+              <div class="swiper slide-studio">
+                <ul class="swiper-wrapper">
+                  <li class="swiper-slide clip-swiper">
+                    <div class="module">
+                      <div class="img-area">
+                        <div class="thumb">
+                          <div class="thumb-img">
+                            <img src="../resources/images/정년이 clip img.jpeg" alt="정년이 클립 썸네일" />
+                          </div>
+                          <div class="play-btn">
+                            <a href="#" title="재생">
+                              <i class="icon-play-btn"></i>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="time-wrap">
+                          <span class="time">00:29:27</span>
+                        </div>
+                      </div>
+                      <div class="typo-area">
+                        <div class="typo-inner" style="min-height: 0px">
+                          <dl>
+                            <dt><a href="#">[로얄리뷰] 매란국극단 주역들과 함께 보는 '정년이' 1-4화💖 비하인드부터 찐 리액션까지 이~리 오너라! (배우들도 시청자가 돼..🥰)</a></dt>
+                            <dd><a href="https://tvn.cjenm.com/ko/Jeongnyeon/special/">정년이</a></dd>
+                          </dl>
+                        </div>
+                        <div class="tag-label">
+                          <div class="inner">
+                            <span class="flag-txt">기획클립</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="swiper-slide clip-swiper">
+                    <div class="module">
+                      <div class="img-area">
+                        <div class="thumb">
+                          <div class="thumb-img">
+                            <img src="../resources/images/문과이과 썸네일.jfif" alt="문과이과 클립 썸네일" />
+                          </div>
+                          <div class="play-btn">
+                            <a href="#" title="재생">
+                              <i class="icon-play-btn"></i>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="time-wrap">
+                          <span class="time">00:10:27</span>
+                        </div>
+                      </div>
+                      <div class="typo-area">
+                        <div class="typo-inner" style="min-height: 0px">
+                          <dl>
+                            <dt><a href="#">[최초공개] 수면을 돈으로 환산 할 수 있을까? #highlight #놀라운증명 EP.4</a></dt>
+                            <dd><a href="https://tvn.cjenm.com/ko/Jeongnyeon/special/">문과vs이과, 놀라운 증명</a></dd>
+                          </dl>
+                        </div>
+                        <div class="tag-label">
+                          <div class="inner">
+                            <span class="flag-txt">하이라이트</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="swiper-slide clip-swiper">
+                    <div class="module">
+                      <div class="img-area">
+                        <div class="thumb">
+                          <div class="thumb-img">
+                            <img src="../resources/images/백패커2 썸네일.jfif" alt="백패커2 클립 썸네일" />
+                          </div>
+                          <div class="play-btn">
+                            <a href="#" title="재생">
+                              <i class="icon-play-btn"></i>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="time-wrap">
+                          <span class="time">00:01:04</span>
+                        </div>
+                      </div>
+                      <div class="typo-area">
+                        <div class="typo-inner" style="min-height: 0px">
+                          <dl>
+                            <dt><a href="#">[23화 예고] 경찰서에서 발생한 든든한 절도 사건? 대도 백종원은 입맛을 훔칠 수 있을까!</a></dt>
+                            <dd><a href="https://tvn.cjenm.com/ko/Jeongnyeon/special/">백패커2</a></dd>
+                          </dl>
+                        </div>
+                        <div class="tag-label">
+                          <div class="inner">
+                            <span class="flag-txt">예고</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="swiper-slide clip-swiper">
+                    <div class="module">
+                      <div class="img-area">
+                        <div class="thumb">
+                          <div class="thumb-img">
+                            <img src="../resources/images/놀라운 토요일 썸네일.jfif" alt="놀라운토요일 클립 썸네일" />
+                          </div>
+                          <div class="play-btn">
+                            <a href="#" title="재생">
+                              <i class="icon-play-btn"></i>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="time-wrap">
+                          <span class="time">00:00:35</span>
+                        </div>
+                      </div>
+                      <div class="typo-area">
+                        <div class="typo-inner" style="min-height: 0px">
+                          <dl>
+                            <dt><a href="#">[예고] 매력이 넘치는데 어떻게 안 반하나🥰 반반한 매력의 최민호 X 김예원 X 승희💖</a></dt>
+                            <dd><a href="https://tvn.cjenm.com/ko/Jeongnyeon/special/">놀라운 토요일</a></dd>
+                          </dl>
+                        </div>
+                        <div class="tag-label">
+                          <div class="inner">
+                            <span class="flag-txt">예고</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="swiper-slide clip-swiper">
+                    <div class="module">
+                      <div class="img-area">
+                        <div class="thumb">
+                          <div class="thumb-img">
+                            <img src="../resources/images/이한신 썸네일.jfif" alt="가석방 심사관 이한신 클립 썸네일" />
+                          </div>
+                          <div class="play-btn">
+                            <a href="#" title="재생">
+                              <i class="icon-play-btn"></i>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="time-wrap">
+                          <span class="time">00:00:15</span>
+                        </div>
+                      </div>
+                      <div class="typo-area">
+                        <div class="typo-inner" style="min-height: 0px">
+                          <dl>
+                            <dt><a href="#">[정의집행 티저] 동작 그만!👊 '점잖게 안싸우는' 변호사x형사x사채업자의 공조는?!</a></dt>
+                            <dd><a href="https://tvn.cjenm.com/ko/Jeongnyeon/special/">가석방 심사관 이한신</a></dd>
+                          </dl>
+                        </div>
+                        <div class="tag-label">
+                          <div class="inner">
+                            <span class="flag-txt">예고</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="swiper-slide clip-swiper">
+                    <div class="module">
+                      <div class="img-area">
+                        <div class="thumb">
+                          <div class="thumb-img">
+                            <img src="../resources/images/정년이 썸네일2.jfif" alt="정년이 클립 썸네일" />
+                          </div>
+                          <div class="play-btn">
+                            <a href="#" title="재생">
+                              <i class="icon-play-btn"></i>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="time-wrap">
+                          <span class="time">00:10:02</span>
+                        </div>
+                      </div>
+                      <div class="typo-area">
+                        <div class="typo-inner" style="min-height: 0px">
+                          <dl>
+                            <dt><a href="#">6화 하이라이트｜🔥인기폭발🔥 매란국극단, 실력파 단원들 뒤에 숨은 빌런?!</a></dt>
+                            <dd><a href="https://tvn.cjenm.com/ko/Jeongnyeon/special/">정년이</a></dd>
+                          </dl>
+                        </div>
+                        <div class="tag-label">
+                          <div class="inner">
+                            <span class="flag-txt">하이라이트</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="swiper-slide clip-swiper">
+                    <div class="module">
+                      <div class="img-area">
+                        <div class="thumb">
+                          <div class="thumb-img">
+                            <img src="../resources/images/문과이과 썸네일2.jfif" alt="문과vs이과 클립 썸네일" />
+                          </div>
+                          <div class="play-btn">
+                            <a href="#" title="재생">
+                              <i class="icon-play-btn"></i>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="time-wrap">
+                          <span class="time">00:07:18</span>
+                        </div>
+                      </div>
+                      <div class="typo-area">
+                        <div class="typo-inner" style="min-height: 0px">
+                          <dl>
+                            <dt><a href="#">잠 = 죽음? 잠을 부정적으로 생각하게 된 이유 #놀라운증명 EP.4</a></dt>
+                            <dd><a href="https://tvn.cjenm.com/ko/Jeongnyeon/special/">문과vs이과, 놀라운 증명</a></dd>
+                          </dl>
+                        </div>
+                        <div class="tag-label">
+                          <div class="inner">
+                            <span class="flag-txt">기획클립</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="swiper-slide clip-swiper">
+                    <div class="module">
+                      <div class="img-area">
+                        <div class="thumb">
+                          <div class="thumb-img">
+                            <img src="../resources/images/문과이과 썸네일2.jfif" alt="문과vs이과 클립 썸네일" />
+                          </div>
+                          <div class="play-btn">
+                            <a href="#" title="재생">
+                              <i class="icon-play-btn"></i>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="time-wrap">
+                          <span class="time">00:07:18</span>
+                        </div>
+                      </div>
+                      <div class="typo-area">
+                        <div class="typo-inner" style="min-height: 0px">
+                          <dl>
+                            <dt><a href="#">잠 = 죽음? 잠을 부정적으로 생각하게 된 이유 #놀라운증명 EP.4</a></dt>
+                            <dd><a href="https://tvn.cjenm.com/ko/Jeongnyeon/special/">문과vs이과, 놀라운 증명</a></dd>
+                          </dl>
+                        </div>
+                        <div class="tag-label">
+                          <div class="inner">
+                            <span class="flag-txt">기획클립</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="swiper-slide clip-swiper">
+                    <div class="module">
+                      <div class="img-area">
+                        <div class="thumb">
+                          <div class="thumb-img">
+                            <img src="../resources/images/문과이과 썸네일2.jfif" alt="문과vs이과 클립 썸네일" />
+                          </div>
+                          <div class="play-btn">
+                            <a href="#" title="재생">
+                              <i class="icon-play-btn"></i>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="time-wrap">
+                          <span class="time">00:07:18</span>
+                        </div>
+                      </div>
+                      <div class="typo-area">
+                        <div class="typo-inner" style="min-height: 0px">
+                          <dl>
+                            <dt><a href="#">잠 = 죽음? 잠을 부정적으로 생각하게 된 이유 #놀라운증명 EP.4</a></dt>
+                            <dd><a href="https://tvn.cjenm.com/ko/Jeongnyeon/special/">문과vs이과, 놀라운 증명</a></dd>
+                          </dl>
+                        </div>
+                        <div class="tag-label">
+                          <div class="inner">
+                            <span class="flag-txt">기획클립</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="swiper-slide clip-swiper">
+                    <div class="module">
+                      <div class="img-area">
+                        <div class="thumb">
+                          <div class="thumb-img">
+                            <img src="../resources/images/문과이과 썸네일2.jfif" alt="문과vs이과 클립 썸네일" />
+                          </div>
+                          <div class="play-btn">
+                            <a href="#" title="재생">
+                              <i class="icon-play-btn"></i>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="time-wrap">
+                          <span class="time">00:07:18</span>
+                        </div>
+                      </div>
+                      <div class="typo-area">
+                        <div class="typo-inner" style="min-height: 0px">
+                          <dl>
+                            <dt><a href="#">잠 = 죽음? 잠을 부정적으로 생각하게 된 이유 #놀라운증명 EP.4</a></dt>
+                            <dd><a href="https://tvn.cjenm.com/ko/Jeongnyeon/special/">문과vs이과, 놀라운 증명</a></dd>
+                          </dl>
+                        </div>
+                        <div class="tag-label">
+                          <div class="inner">
+                            <span class="flag-txt">기획클립</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>전체보기</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- 이벤트 섹션 -->
+        <section class="sec-g sec-news bg-gray">
+          <div class="main-inner">
+            <h2 class="tit-depth1">진행 중 이벤트</h2>
+            <div class="sec-g__cont">
+              <div class="swiper slide-studio">
+                <ul class="swiper-wrapper">
+                  <li class="swiper-slide">
+                    <a href="#">
+                      <div class="link-area">
+                        <div class="thumb-box">
+                          <div class="img-ratio">
+                            <div class="lazyload-wrapper">
+                              <img src="../resources/images/event_thumb.png" alt="이벤트 이미지" />
+                            </div>
+                          </div>
+                          <span class="status ing">진행중</span>
+                        </div>
+                        <div class="expl-box">
+                          <div class="event-tit">
+                            <span>[이젠 사랑할 수 있을까] 결혼 안한거다 VS 못한거다</span>
+                          </div>
+                          <div class="event-expl">
+                            <div class="expl-info">
+                              <strong>기간</strong>
+                              <span class="date-font">2024.10.21 - 2024.11.25</span>
+                            </div>
+                            <div class="expl-info">
+                              <strong>대상</strong>
+                              <span>회원/비회원 전체</span>
+                            </div>
+                            <div class="expl-info">
+                              <strong>조회</strong>
+                              <span>1,943</span>
+                            </div>
+                            <div class="expl-info">
+                              <strong>참여</strong>
+                              <span>149</span>
+                            </div>
+                            <div class="expl-info">
+                              <strong>채널</strong>
+                              <span>tvN STORY</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer id="footer" include-html="./layout/footer.html">
+        <div class="main-inner">
+          <div class="f-cont">
+            <div class="f-top">
+              <div class="f-logo">
+                <h1 id="logo">
+                  <a href="#">
+                    <span>우리자산운용</span>
+                  </a>
+                </h1>
+              </div>
+              <div class="f-link"></div>
+            </div>
+            <div class="f-info"></div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

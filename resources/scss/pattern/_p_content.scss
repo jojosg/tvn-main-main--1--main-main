@@ -1,0 +1,271 @@
+// 사이트 컨텐츠 내용
+:root {
+  --swiper-theme-color: red;
+}
+
+.primary-color {
+  color: #fa0028;
+}
+
+// 전역 스타일
+.swiper {
+  width: 100%;
+  height: 100%;
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    a {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    display: none;
+  }
+  .swiper-button-next::before,
+  .swiper-button-prev::before {
+    @include lineAwesome;
+    font-size: 3rem;
+    color: $black;
+    opacity: 0.5;
+  }
+  .swiper-button-next::before {
+    content: "\f138";
+  }
+  .swiper-button-prev::before {
+    content: "\f137";
+  }
+}
+
+.slide-intro {
+  .swiper-slide {
+    position: relative;
+    &.swiper-slide-active {
+      .text-area {
+        opacity: 1;
+        // transform: translate(-60%, -50%);
+      }
+    }
+
+    img {
+      object-position: 50% 100%;
+    }
+    .text-area {
+      position: absolute;
+      text-align: left;
+      top: 80%;
+      left: 0px;
+      // transform: translate(-60%, 0);
+      width: 70%;
+      max-width: 400px;
+      opacity: 0;
+      transition: all 0.5s;
+
+      @include tabletMore {
+        bottom: auto;
+        top: 40%;
+        // left: 80px;
+        right: 80px;
+        max-width: 1440px;
+        margin: 0 auto;
+      }
+      // .text-area__tit
+      &__tit {
+        font-size: 3rem;
+        color: $white;
+        font-family: "GmarketSansMedium";
+        font-weight: $font-bold;
+        line-height: 1.2;
+      }
+      &__cont {
+        color: $gray-70;
+      }
+      &__goto {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 7px 20px;
+        background: $primary;
+        color: $white;
+      }
+    }
+    img {
+      height: 100vh;
+    }
+  }
+  .swiper-pagination {
+    display: none;
+  }
+}
+
+// tablet
+// @media screen and (min-width: 600px) {
+//   .slide-intro .swiper-slide img {
+//     height: 70vh;
+//   }
+// }
+
+// desktop
+@media screen and (min-width: 1024px) {
+  .slide-intro {
+    .swiper-slide {
+      img {
+        height: 100vh;
+      }
+      .text-area {
+        width: 100%;
+        max-width: none;
+        text-align: left;
+      }
+      .text-area__tit {
+        font-size: 6rem;
+      }
+      .text-area__cont {
+        font-size: 2rem;
+      }
+      .text-area__goto {
+        margin-top: 30px;
+      }
+    }
+    .swiper-pagination {
+      display: block;
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+      display: none;
+    }
+  }
+}
+
+.slide-studio {
+  overflow: visible;
+  width: 80%;
+  margin-left: 0;
+  @include mobileMore {
+    width: 90%;
+  }
+  @include tabletMore {
+    width: 100%;
+    margin-left: auto;
+  }
+  .swiper-pagination {
+    bottom: -50px;
+  }
+}
+
+.pro-cont {
+  .f-logo {
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    background: url("../../../resources/images/tvn_f_logo_h1.png") no-repeat 0 0;
+    margin-left: 7px;
+  }
+}
+
+ol {
+  @include tabletMore {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 50px;
+  }
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  .pro-name-time {
+    @include tabletMore {
+      display: none;
+    }
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px 12px 58px;
+    gap: 8px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    .pro-name1 {
+      flex-grow: 1;
+    }
+    .live-now {
+      ::before {
+        content: "";
+        background-color: #fa0028;
+        width: 10px;
+        height: 10px;
+        border-radius: 10px;
+        display: inline-block;
+        margin-right: 5px;
+      }
+    }
+  }
+  .pro-name1:nth-child(1)::before {
+    content: "드라마";
+  }
+  .pro-name2:nth-child(1)::before {
+    content: "예능";
+  }
+  .pro-name3:nth-child(1)::before {
+    content: "예능";
+  }
+  .pro-name4:nth-child(1)::before {
+    content: "예능";
+  }
+  .pro-name5:nth-child(1)::before {
+    content: "예능";
+  }
+  .pro-name::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 16px;
+    top: 12px;
+    width: 38px;
+    height: 22px;
+    border-radius: 48px;
+    background: #fa0028;
+    font-family: "Pretendard";
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 22px;
+    letter-spacing: -0.06px;
+    text-align: center;
+    margin-top: 3px;
+  }
+}
+
+.pro-time {
+  display: flex;
+  justify-content: space-between;
+}
+
+.table-img {
+  display: none;
+  @include tabletMore {
+    display: block;
+    width: 100%;
+    max-width: 288px;
+  }
+}
+
+// .pc-only-banner {
+//   display: none;
+//   @include tabletMore {
+//     display: block;
+//     width: 100%;
+//   }
+// }
