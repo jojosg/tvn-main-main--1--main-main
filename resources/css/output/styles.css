@@ -434,6 +434,10 @@ dt {
   width: 100%;
   height: 100%;
 }
+.pin-spacer .main-inner {
+  position: relative;
+  z-index: 1;
+}
 @media (min-width: 1024px) {
   .pin-spacer .main-inner {
     max-width: 1280px;
@@ -508,6 +512,11 @@ dt {
     margin-top: 0;
   }
 }
+@media screen and (min-width: 1260px) {
+  .pin-spacer .main-inner .pro-cont .list-box {
+    width: 720px;
+  }
+}
 @media (min-width: 600px) {
   .pin-spacer .main-inner .pro-cont .list-box {
     flex-direction: row;
@@ -515,6 +524,9 @@ dt {
          column-gap: 0;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+  .pin-spacer .main-inner .pro-cont .list-box li {
+    width: calc(50% - 20px);
   }
 }
 @media (min-width: 600px) and (min-width: 1024px) {
@@ -528,6 +540,11 @@ dt {
     flex-direction: column;
     width: 232px;
     height: 480px;
+  }
+}
+@media screen and (min-width: 1260px) {
+  .pin-spacer .main-inner .pro-cont .list-box .list_category_card {
+    width: 340px;
   }
 }
 .pin-spacer .main-inner .pro-cont .list_category_card .card-img {
@@ -748,149 +765,138 @@ dt {
 
 #header {
   position: fixed;
-  z-index: 1000;
-}
-#header.active::before {
-  height: 218px;
-}
-#header.active .gnb__depth2 {
-  height: 218px;
-  padding: 30px 0;
-}
-#header::before {
-  content: "";
-  position: absolute;
-  top: 102px;
+  top: 0;
   left: 0;
   right: 0;
-  height: 0;
-  background: #f8f8f8;
-  transition: all 0.3s;
+  z-index: 200;
 }
-#header .inner {
+@media (min-width: 1024px) {
+  #header {
+    background: rgba(0, 0, 0, 0.1);
+    height: 80px;
+  }
+}
+#header .h_wrap {
+  position: relative;
+  height: 100%;
+}
+#header .h_wrap .h_top {
+  background: rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  height: 56px;
+  padding: 0 20px;
+}
+@media (min-width: 1024px) {
+  #header .h_wrap #navDev {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+}
+#header .h_wrap #navDev .navbar-dev {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: none;
-  height: 73px;
+  flex-direction: column;
+  gap: 12px;
+  position: fixed;
+  top: 56px;
+  right: -100%;
+  z-index: 100;
+  width: 100%;
+  height: calc(100% - 56px);
+  padding: 16px 20px 40px;
+  background: #fff;
 }
 @media (min-width: 1024px) {
-  #header .inner {
+  #header .h_wrap #navDev .navbar-dev {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 2%;
     height: auto;
+    padding: 0;
+    position: initial;
+    background: transparent;
   }
 }
-#header #logo {
-  transform: scale(0.8);
-  transform-origin: 0 50%;
+#header .h_wrap #navDev .navbar-dev li a {
+  display: block;
+  position: relative;
+  padding: 12px 52px 12px 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.9px;
 }
 @media (min-width: 1024px) {
-  #header #logo {
-    transform: none;
+  #header .h_wrap #navDev .navbar-dev li a {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    padding: 0 2vw;
+    opacity: 0.8;
+    color: #fff;
   }
 }
-#header #logo a {
-  display: block;
-  width: 300px;
-  height: 60px;
-  background: url("../../../resources/images/tvn_logo_h1.png") no-repeat 0 0/contain;
+#header .h_wrap #navDev .navbar-dev li .sub-menu {
+  overflow: hidden;
+  height: 0;
 }
-#header #logo span {
-  position: absolute !important;
-  width: 1px !important;
-  height: 1px !important;
-  padding: 0 !important;
-  margin: -1px !important;
-  overflow: hidden !important;
-  clip: rect(0, 0, 0, 0) !important;
-  white-space: nowrap !important;
-  border: 0 !important;
+@media (min-width: 1024px) {
+  #header .h_wrap #navDev .navbar-dev li .sub-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    position: absolute;
+    top: 62px;
+    left: 1vw;
+    overflow: hidden;
+    visibility: hidden;
+    width: 140px;
+    padding: 12px 8px;
+    border: 1px solid #dbdee1;
+    background: #fff;
+  }
+}
+#header .logo {
+  display: flex;
+  align-items: center;
+  width: 230px;
+  height: 56px;
+}
+@media (min-width: 1024px) {
+  #header .logo {
+    position: absolute;
+    width: 183px;
+    height: 80px;
+    z-index: 110;
+  }
+}
+#header .logo .ico {
+  background: url("../../../resources/images/tvn_logo_h1.png") no-repeat 0 0/100% 100%;
+  display: block;
+  width: 74px;
+  height: 38px;
 }
 
-#gnb {
-  display: none;
-  position: relative;
+.btn-dropdown {
+  background: url("../../../resources/images/gnb_menu_w.svg") no-repeat 50% 50%/32px;
+  text-indent: -9999px;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  width: 32px;
+  height: 32px;
+  margin-top: -16px;
 }
 @media (min-width: 1024px) {
-  #gnb {
-    display: block;
+  .btn-dropdown {
+    display: none;
   }
-}
-#gnb .gnb__depth1 {
-  display: flex;
-}
-#gnb .gnb__depth1 > li {
-  position: relative;
-}
-#gnb .gnb__depth1 > li:hover > a > span {
-  color: #fa0028;
-}
-#gnb .gnb__depth1 > li:hover > a > span::after {
-  width: 100%;
-}
-#gnb .gnb__depth1 > li:first-child .gnb__depth2::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 1px;
-  height: 100%;
-  background: #e4e4e4;
-}
-#gnb .gnb__depth1 > li > a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 102px;
-  padding: 0 50px;
-  font-size: 2rem;
-  font-weight: 700;
-}
-#gnb .gnb__depth1 > li > a span {
-  position: relative;
-  display: flex;
-  align-items: center;
-  height: 100%;
-}
-#gnb .gnb__depth1 > li > a span::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 0;
-  height: 2px;
-  background: #fa0028;
-  transition: all 0.3s;
-}
-#gnb .gnb__depth2 {
-  overflow: hidden;
-  position: absolute;
-  top: 102px;
-  left: 0;
-  right: 0;
-  height: 0;
-  padding: 0;
-  background: #f8f8f8;
-  transition: all 0.3s;
-}
-#gnb .gnb__depth2::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 1px;
-  height: 100%;
-  background: #e4e4e4;
-}
-#gnb .gnb__depth2 a {
-  display: block;
-  padding: 7px 0;
-  text-align: center;
-  color: #555555;
-}
-#gnb .gnb__depth2 a:hover {
-  font-weight: 700;
-  color: #1d1d1d;
 }
 
 .util {
@@ -949,12 +955,6 @@ dt {
 }
 .util .search::before {
   content: "\f002";
-  font-family: "Line Awesome Free";
-  font-weight: 900;
-  font-size: 3.8rem;
-}
-.util .all-menu::before {
-  content: "\f0c9";
   font-family: "Line Awesome Free";
   font-weight: 900;
   font-size: 3.8rem;
@@ -1053,19 +1053,56 @@ dt {
 }
 
 .sr-only {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
+  font-size: 0;
   position: absolute;
-  width: 1px;
+  top: -9999px;
+  height: 0;
 }
 
 .card-section {
   position: relative;
   background: url("../../../resources/images/backgroundImage2.png") no-repeat 0 0/cover;
+}
+
+#footer .main-inner {
+  padding: 40px 20px;
+}
+#footer .main-inner .f-cont .f-top .f-logo {
+  background: url("../../../resources/images/tvn_f_logo_h1.png") no-repeat 0 0/100%;
+  width: 65px;
+  height: 37px;
+}
+#footer .main-inner .f-cont .f-top .f-link {
+  padding-top: 20px;
+}
+#footer .main-inner .f-cont .f-info {
+  padding-top: 20px;
+}
+#footer .main-inner .f-cont .f-info ul li {
+  position: relative;
+  padding-left: 24px;
+}
+#footer .main-inner .f-cont .f-info ul li ::before {
+  content: "";
+  background: red;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+}
+#footer .main-inner .f-cont .f-info ul li a {
+  font-size: 13px;
+  color: #b2b4b8;
+  line-height: 20px;
+  letter-spacing: -0.65px;
+}
+#footer .main-inner .f-cont .copyright {
+  padding-top: 20px;
+  font-size: 13px;
+  color: #999;
+  line-height: 16px;
+  letter-spacing: -0.65px;
 }
 
 :root {
